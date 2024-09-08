@@ -1,5 +1,6 @@
 package faithnyambura.io.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
 //         binding.rvContacts.layoutManager=LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
 //        binding.rvContacts.layoutManager=GridLayoutManager(this,2)
         displayContacts()
+
+        binding.addBtn.setOnClickListener {
+            val intent=Intent(this,AddContactActivity::class.java)
+            startActivity(intent)
+        }
     }
     fun displayContacts(){
         val contact1= Contact(1,"Abraham","0712121212","andrew@gmail.com","")

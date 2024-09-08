@@ -1,11 +1,13 @@
 package faithnyambura.io.database
 
 import androidx.lifecycle.LiveData
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import faithnyambura.io.models.Contact
 
+@Dao
 interface ContactsDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
   fun insertContacts(contact: Contact)

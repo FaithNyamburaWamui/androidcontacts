@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddContactActivity">
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="122dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="58dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
